@@ -1,7 +1,7 @@
 // Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
 
 const { test } = Deno;
-import { assertEquals } from "https://deno.land/std@v0.38.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@v0.42.0/testing/asserts.ts";
 import {
   lookup,
   contentType,
@@ -11,14 +11,14 @@ import {
   types
 } from "./mod.ts";
 
-test(function testLookup(): void {
+test({name: "testLookup", fn: () => {
   assertEquals(lookup("json"), "application/json");
   assertEquals(lookup(".md"), "text/markdown");
   assertEquals(lookup("folder/file.js"), "application/javascript");
   assertEquals(lookup("folder/.htaccess"), undefined);
-});
+}});
 
-test(function testContentType(): void {
+test({name: "testContentType", fn: () => {
   assertEquals(contentType("markdown"), "text/markdown; charset=utf-8");
   assertEquals(contentType("file.json"), "application/json; charset=utf-8");
   assertEquals(contentType("text/html"), "text/html; charset=utf-8");
@@ -28,25 +28,25 @@ test(function testContentType(): void {
   );
   assertEquals(contentType(".htaccess"), undefined);
   assertEquals(contentType("file.ts"), "video/mp2t");
-});
+}});
 
-test(function testExtension(): void {
+test({name: "testExtension", fn: () => {
   assertEquals(extension("application/octet-stream"), "bin");
   assertEquals(extension("application/javascript"), "js");
   assertEquals(extension("text/html"), "html");
-});
+}});
 
-test(function testCharset(): void {
+test({name: "testCharset", fn: () => {
   assertEquals(charset("text/markdown"), "UTF-8");
   assertEquals(charset("text/css"), "UTF-8");
-});
+}});
 
-test(function testExtensions(): void {
+test({name: "testExtensions", fn: () => {
   assertEquals(extensions.get("application/javascript"), ["js", "mjs"]);
   assertEquals(extensions.get("foo"), undefined);
-});
+}});
 
-test(function testTypes(): void {
+test({name: "testTypes", fn: () => {
   assertEquals(types.get("js"), "application/javascript");
   assertEquals(types.get("foo"), undefined);
-});
+}});
