@@ -1,7 +1,7 @@
 // Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
 
 const { test } = Deno;
-import { assertEquals } from "https://deno.land/std@v0.38.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@v0.42.0/testing/asserts.ts";
 import {
   lookup,
   contentType,
