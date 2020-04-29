@@ -8,17 +8,17 @@ import {
   extension,
   charset,
   extensions,
-  types
+  types,
 } from "./mod.ts";
 
-test(function testLookup(): void {
+test("testLookup", function (): void {
   assertEquals(lookup("json"), "application/json");
   assertEquals(lookup(".md"), "text/markdown");
   assertEquals(lookup("folder/file.js"), "application/javascript");
   assertEquals(lookup("folder/.htaccess"), undefined);
 });
 
-test(function testContentType(): void {
+test("testContentType", function (): void {
   assertEquals(contentType("markdown"), "text/markdown; charset=utf-8");
   assertEquals(contentType("file.json"), "application/json; charset=utf-8");
   assertEquals(contentType("text/html"), "text/html; charset=utf-8");
@@ -30,23 +30,23 @@ test(function testContentType(): void {
   assertEquals(contentType("file.ts"), "video/mp2t");
 });
 
-test(function testExtension(): void {
+test("testExtension", function (): void {
   assertEquals(extension("application/octet-stream"), "bin");
   assertEquals(extension("application/javascript"), "js");
   assertEquals(extension("text/html"), "html");
 });
 
-test(function testCharset(): void {
+test("testCharset", function (): void {
   assertEquals(charset("text/markdown"), "UTF-8");
   assertEquals(charset("text/css"), "UTF-8");
 });
 
-test(function testExtensions(): void {
+test("testExtensions", function (): void {
   assertEquals(extensions.get("application/javascript"), ["js", "mjs"]);
   assertEquals(extensions.get("foo"), undefined);
 });
 
-test(function testTypes(): void {
+test("testTypes", function (): void {
   assertEquals(types.get("js"), "application/javascript");
   assertEquals(types.get("foo"), undefined);
 });
