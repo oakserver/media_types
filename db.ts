@@ -4237,39 +4237,45 @@ export const db: {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.commentauthors+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.presentationml.comments+xml": {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.handoutmaster+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.notesmaster+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.notesslide+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.presentationml.presentation": {
     source: "iana",
     compressible: false,
     extensions: ["pptx"],
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.presprops+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.presprops+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.presentationml.slide": {
     source: "iana",
     extensions: ["sldx"],
@@ -4278,30 +4284,35 @@ export const db: {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.slidelayout+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.slidemaster+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.presentationml.slideshow": {
     source: "iana",
     extensions: ["ppsx"],
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.slideshow.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.slideupdateinfo+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.tablestyles+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.presentationml.tags+xml": {
     source: "iana",
     compressible: true,
@@ -4310,79 +4321,94 @@ export const db: {
     source: "iana",
     extensions: ["potx"],
   },
-  "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.presentationml.template.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.presentationml.viewprops+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.calcchain+xml": {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.chartsheet+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.comments+xml": {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.connections+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.dialogsheet+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.externallink+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcachedefinition+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivotcacherecords+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.pivottable+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.querytable+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionheaders+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.revisionlog+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sharedstrings+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": {
     source: "iana",
     compressible: false,
     extensions: ["xlsx"],
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.sheetmetadata+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.styles+xml": {
     source: "iana",
     compressible: true,
@@ -4391,26 +4417,29 @@ export const db: {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.tablesinglecells+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.template": {
     source: "iana",
     extensions: ["xltx"],
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.template.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.usernames+xml": {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.spreadsheetml.volatiledependencies+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.spreadsheetml.worksheet+xml": {
     source: "iana",
     compressible: true,
@@ -4426,47 +4455,55 @@ export const db: {
   "application/vnd.openxmlformats-officedocument.vmldrawing": {
     source: "iana",
   },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.comments+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.wordprocessingml.document": {
     source: "iana",
     compressible: false,
     extensions: ["docx"],
   },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document.glossary+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.endnotes+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.fonttable+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.wordprocessingml.footer+xml": {
     source: "iana",
     compressible: true,
   },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.footnotes+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.numbering+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.settings+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-officedocument.wordprocessingml.styles+xml": {
     source: "iana",
     compressible: true,
@@ -4475,14 +4512,16 @@ export const db: {
     source: "iana",
     extensions: ["dotx"],
   },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml": {
-    source: "iana",
-    compressible: true,
-  },
-  "application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml": {
-    source: "iana",
-    compressible: true,
-  },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.template.main+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.websettings+xml":
+    {
+      source: "iana",
+      compressible: true,
+    },
   "application/vnd.openxmlformats-package.core-properties+xml": {
     source: "iana",
     compressible: true,

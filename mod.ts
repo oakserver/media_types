@@ -42,7 +42,7 @@ export const types = new Map<string, string>();
 /** Internal function to populate the maps based on the Mime DB */
 function populateMaps(
   extensions: Map<string, string[]>,
-  types: Map<string, string>
+  types: Map<string, string>,
 ): void {
   const preference = ["nginx", "apache", undefined, "iana"];
 
