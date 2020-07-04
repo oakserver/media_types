@@ -29,7 +29,7 @@ test({
     assertEquals(contentType("text/html"), "text/html; charset=utf-8");
     assertEquals(
       contentType("text/html; charset=iso-8859-1"),
-      "text/html; charset=iso-8859-1"
+      "text/html; charset=iso-8859-1",
     );
     assertEquals(contentType(".htaccess"), undefined);
     assertEquals(contentType("file.ts"), "video/mp2t");
