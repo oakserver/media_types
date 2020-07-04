@@ -91,5 +91,5 @@ Adapted from [mime-type](https://github.com/jshttp/mime-types).
 
 MIT License.
 
-[ci badge]: https://github.com/oakserver/media_types/workflows/ci/badge.svg
+[ci badge]: https://github.com/oakserver/media_types/workflows/media_types%20ci/badge.svg
 [ci link]: https://github.com/oakserver/media_types/actions
