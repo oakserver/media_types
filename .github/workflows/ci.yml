@@ -1,0 +1,18 @@
+name: media_types ci
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    name: media_types tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: download deno
+        uses: denolib/setup-deno@master
+        with:
+          deno-version: v.1.1.2
+      - name: check formatting
+        run: deno fmt --check
+      - name: run tests
+        run: deno test

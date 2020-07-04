@@ -1,6 +1,7 @@
 # media_types
 
-[![][tci badge]][tci link]
+[![ci][ci badge]][ci link]
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/oak/mod.ts)
 
 A module that assists in resolving media types and extensions. It consumes the
 [mime-db](https://github.com/jshttp/mime-db) and provides API access to the
@@ -90,5 +91,5 @@ Adapted from [mime-type](https://github.com/jshttp/mime-types).
 
 MIT License.
 
-[tci badge]: https://travis-ci.com/oakserver/media_types.svg?branch=master
-[tci link]: https://travis-ci.com/oakserver/media_types
+[tci badge]: https://github.com/oakserver/media_types/workflows/ci/badge.svg
+[tci link]: https://github.com/oakserver/media_types/actions
