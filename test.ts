@@ -1,7 +1,7 @@
 // Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
 
 const { test } = Deno;
-import { assertEquals } from "https://deno.land/std@v0.60.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@v0.61.0/testing/asserts.ts";
 import {
   lookup,
   contentType,
@@ -29,7 +29,7 @@ test({
     assertEquals(contentType("text/html"), "text/html; charset=utf-8");
     assertEquals(
       contentType("text/html; charset=iso-8859-1"),
-      "text/html; charset=iso-8859-1",
+      "text/html; charset=iso-8859-1"
     );
     assertEquals(contentType(".htaccess"), undefined);
     assertEquals(contentType("file.ts"), "video/mp2t");

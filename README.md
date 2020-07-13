@@ -1,7 +1,7 @@
 # media_types
 
 [![ci][ci badge]][ci link]
-[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/oak/mod.ts)
+[![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/media_types/mod.ts)
 
 A module that assists in resolving media types and extensions. It consumes the
 [mime-db](https://github.com/jshttp/mime-db) and provides API access to the
