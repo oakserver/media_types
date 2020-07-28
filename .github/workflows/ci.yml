@@ -14,5 +14,7 @@ jobs:
           deno-version: v1.2.1
       - name: check formatting
         run: deno fmt --check
+      - name: check linting
+        run: deno lint --unstable
       - name: run tests
         run: deno test
