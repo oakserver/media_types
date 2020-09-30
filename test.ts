@@ -1,17 +1,16 @@
-// Copyright 2018-2020 the Deno authors. All rights reserved. MIT license.
+// Copyright 2020 the oak authors. All rights reserved. MIT license.
 
-const { test } = Deno;
 import { assertEquals } from "https://deno.land/std@0.69.0/testing/asserts.ts";
 import {
-  lookup,
+  charset,
   contentType,
   extension,
-  charset,
   extensions,
+  lookup,
   types,
 } from "./mod.ts";
 
-test({
+Deno.test({
   name: "lookup",
   fn() {
     assertEquals(lookup("json"), "application/json");
@@ -21,7 +20,7 @@ test({
   },
 });
 
-test({
+Deno.test({
   name: "contentType",
   fn() {
     assertEquals(contentType("markdown"), "text/markdown; charset=utf-8");
@@ -36,7 +35,7 @@ test({
   },
 });
 
-test({
+Deno.test({
   name: "extension",
   fn() {
     assertEquals(extension("application/octet-stream"), "bin");
@@ -45,7 +44,7 @@ test({
   },
 });
 
-test({
+Deno.test({
   name: "charset",
   fn() {
     assertEquals(charset("text/markdown"), "UTF-8");
@@ -53,7 +52,7 @@ test({
   },
 });
 
-test({
+Deno.test({
   name: "extensions",
   fn() {
     assertEquals(extensions.get("application/javascript"), ["js", "mjs"]);
@@ -61,7 +60,7 @@ test({
   },
 });
 
-test({
+Deno.test({
   name: "types",
   fn() {
     assertEquals(types.get("js"), "application/javascript");
