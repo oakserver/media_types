@@ -98,6 +98,8 @@ export function charset(type: string): string | undefined {
   if (TEXT_TYPE_REGEXP.test(match)) {
     return "UTF-8";
   }
+
+  return;
 }
 
 /** Given an extension, lookup the appropriate media type for that extension.
