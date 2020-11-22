@@ -82,7 +82,7 @@ A `Map` of content types by extension:
 ```ts
 import { types } from "https://deno.land/x/media_types/mod.ts";
 
-types.get("ts"); // "application/javascript"
+types.get("js"); // "application/javascript"
 ```
 
 ---
