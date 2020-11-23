@@ -80,7 +80,7 @@ function populateMaps(
 // Populate the maps upon module load
 populateMaps(extensions, types);
 
-/** Given a media type return any default charset string.  Returns undefined
+/** Given a media type return any default charset string.  Returns `undefined`
  * if not resolvable.
  */
 export function charset(type: string): string | undefined {
@@ -114,7 +114,7 @@ export function lookup(path: string): string | undefined {
 }
 
 /** Given an extension or media type, return the full `Content-Type` header
- * string.  Returns undefined if not resolvable.
+ * string.  Returns `undefined` if not resolvable.
  */
 export function contentType(str: string): string | undefined {
   let mime = str.includes("/") ? str : lookup(str);
@@ -134,7 +134,7 @@ export function contentType(str: string): string | undefined {
 }
 
 /** Given a media type, return the most appropriate extension or return
- * undefined if there is none.
+ * `undefined` if there is none.
  */
 export function extension(type: string): string | undefined {
   const match = EXTRACT_TYPE_REGEXP.exec(type);
