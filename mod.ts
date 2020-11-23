@@ -80,13 +80,13 @@ function populateMaps(
 // Populate the maps upon module load
 populateMaps(extensions, types);
 
-/** Given a media type return any default charset string.  Returns `undefined`
+/** Given a media type return any default charset string.  Returns undefined
  * if not resolvable.
  */
 export function charset(type: string): string | undefined {
   const m = EXTRACT_TYPE_REGEXP.exec(type);
   if (!m) {
-    return;
+    return undefined;
   }
   const [match] = m;
   const mime = db[match.toLowerCase()];
@@ -99,7 +99,7 @@ export function charset(type: string): string | undefined {
     return "UTF-8";
   }
 
-  return;
+  return undefined;
 }
 
 /** Given an extension, lookup the appropriate media type for that extension.
@@ -114,13 +114,13 @@ export function lookup(path: string): string | undefined {
 }
 
 /** Given an extension or media type, return the full `Content-Type` header
- * string.  Returns `undefined` if not resolvable.
+ * string.  Returns undefined if not resolvable.
  */
 export function contentType(str: string): string | undefined {
   let mime = str.includes("/") ? str : lookup(str);
 
   if (!mime) {
-    return;
+    return undefined;
   }
 
   if (!mime.includes("charset")) {
@@ -134,19 +134,19 @@ export function contentType(str: string): string | undefined {
 }
 
 /** Given a media type, return the most appropriate extension or return
- * `undefined` if there is none.
+ * undefined if there is none.
  */
 export function extension(type: string): string | undefined {
   const match = EXTRACT_TYPE_REGEXP.exec(type);
 
   if (!match) {
-    return;
+    return undefined;
   }
 
   const exts = extensions.get(match[1].toLowerCase());
 
   if (!exts || !exts.length) {
-    return;
+    return undefined;
   }
 
   return exts[0];
