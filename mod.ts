@@ -86,7 +86,7 @@ populateMaps(extensions, types);
 export function charset(type: string): string | undefined {
   const m = EXTRACT_TYPE_REGEXP.exec(type);
   if (!m) {
-    return;
+    return undefined;
   }
   const [match] = m;
   const mime = db[match.toLowerCase()];
@@ -98,6 +98,8 @@ export function charset(type: string): string | undefined {
   if (TEXT_TYPE_REGEXP.test(match)) {
     return "UTF-8";
   }
+
+  return undefined;
 }
 
 /** Given an extension, lookup the appropriate media type for that extension.
@@ -118,7 +120,7 @@ export function contentType(str: string): string | undefined {
   let mime = str.includes("/") ? str : lookup(str);
 
   if (!mime) {
-    return;
+    return undefined;
   }
 
   if (!mime.includes("charset")) {
@@ -138,13 +140,13 @@ export function extension(type: string): string | undefined {
   const match = EXTRACT_TYPE_REGEXP.exec(type);
 
   if (!match) {
-    return;
+    return undefined;
   }
 
   const exts = extensions.get(match[1].toLowerCase());
 
   if (!exts || !exts.length) {
-    return;
+    return undefined;
   }
 
   return exts[0];
