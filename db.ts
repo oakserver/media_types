@@ -272,6 +272,9 @@ export const db: {
   "application/cfw": {
     "source": "iana"
   },
+  "application/clr": {
+    "source": "iana"
+  },
   "application/clue+xml": {
     "source": "iana",
     "compressible": true
@@ -437,6 +440,15 @@ export const db: {
   },
   "application/efi": {
     "source": "iana"
+  },
+  "application/elm+json": {
+    "source": "iana",
+    "charset": "UTF-8",
+    "compressible": true
+  },
+  "application/elm+xml": {
+    "source": "iana",
+    "compressible": true
   },
   "application/emergencycalldata.cap+xml": {
     "source": "iana",
@@ -696,6 +708,10 @@ export const db: {
     "compressible": true
   },
   "application/jrd+json": {
+    "source": "iana",
+    "compressible": true
+  },
+  "application/jscalendar+json": {
     "source": "iana",
     "compressible": true
   },
@@ -1206,6 +1222,10 @@ export const db: {
   "application/prs.cww": {
     "source": "iana",
     "extensions": ["cww"]
+  },
+  "application/prs.cyn": {
+    "source": "iana",
+    "charset": "7-BIT"
   },
   "application/prs.hpub+zip": {
     "source": "iana",
@@ -1726,6 +1746,9 @@ export const db: {
     "source": "iana",
     "compressible": true
   },
+  "application/vnd.3gpp.interworking-data": {
+    "source": "iana"
+  },
   "application/vnd.3gpp.mc-signalling-ear": {
     "source": "iana"
   },
@@ -1941,6 +1964,9 @@ export const db: {
   "application/vnd.afpc.afplinedata-pagedef": {
     "source": "iana"
   },
+  "application/vnd.afpc.cmoca-cmresource": {
+    "source": "iana"
+  },
   "application/vnd.afpc.foca-charset": {
     "source": "iana"
   },
@@ -1951,6 +1977,9 @@ export const db: {
     "source": "iana"
   },
   "application/vnd.afpc.modca": {
+    "source": "iana"
+  },
+  "application/vnd.afpc.modca-cmtable": {
     "source": "iana"
   },
   "application/vnd.afpc.modca-formdef": {
@@ -2892,6 +2921,9 @@ export const db: {
   "application/vnd.geogebra.file": {
     "source": "iana",
     "extensions": ["ggb"]
+  },
+  "application/vnd.geogebra.slides": {
+    "source": "iana"
   },
   "application/vnd.geogebra.tool": {
     "source": "iana",
@@ -4848,6 +4880,10 @@ export const db: {
     "source": "iana",
     "extensions": ["see"]
   },
+  "application/vnd.seis+json": {
+    "source": "iana",
+    "compressible": true
+  },
   "application/vnd.sema": {
     "source": "iana",
     "extensions": ["sema"]
@@ -5267,6 +5303,9 @@ export const db: {
   "application/vnd.webturbo": {
     "source": "iana",
     "extensions": ["wtb"]
+  },
+  "application/vnd.wfa.dpp": {
+    "source": "iana"
   },
   "application/vnd.wfa.p2p": {
     "source": "iana"
@@ -6451,7 +6490,7 @@ export const db: {
   "audio/ogg": {
     "source": "iana",
     "compressible": false,
-    "extensions": ["oga","ogg","spx"]
+    "extensions": ["oga","ogg","spx","opus"]
   },
   "audio/opus": {
     "source": "iana"
@@ -7499,6 +7538,15 @@ export const db: {
   "text/coffeescript": {
     "extensions": ["coffee","litcoffee"]
   },
+  "text/cql": {
+    "source": "iana"
+  },
+  "text/cql-expression": {
+    "source": "iana"
+  },
+  "text/cql-identifier": {
+    "source": "iana"
+  },
   "text/css": {
     "source": "iana",
     "charset": "UTF-8",
@@ -7526,6 +7574,9 @@ export const db: {
     "source": "iana"
   },
   "text/enriched": {
+    "source": "iana"
+  },
+  "text/fhirpath": {
     "source": "iana"
   },
   "text/flexfec": {
