@@ -425,7 +425,7 @@ export const db: {
   "application/ecmascript": {
     "source": "iana",
     "compressible": true,
-    "extensions": ["ecma","es"]
+    "extensions": ["es","ecma"]
   },
   "application/edi-consent": {
     "source": "iana"
@@ -970,13 +970,11 @@ export const db: {
   },
   "application/mrb-consumer+xml": {
     "source": "iana",
-    "compressible": true,
-    "extensions": ["xdf"]
+    "compressible": true
   },
   "application/mrb-publish+xml": {
     "source": "iana",
-    "compressible": true,
-    "extensions": ["xdf"]
+    "compressible": true
   },
   "application/msc-ivr+xml": {
     "source": "iana",
@@ -2357,6 +2355,9 @@ export const db: {
   "application/vnd.crypto-shade-file": {
     "source": "iana"
   },
+  "application/vnd.cryptomator.encrypted": {
+    "source": "iana"
+  },
   "application/vnd.ctc-posml": {
     "source": "iana",
     "extensions": ["pml"]
@@ -2398,6 +2399,14 @@ export const db: {
   },
   "application/vnd.cybank": {
     "source": "iana"
+  },
+  "application/vnd.cyclonedx+json": {
+    "source": "iana",
+    "compressible": true
+  },
+  "application/vnd.cyclonedx+xml": {
+    "source": "iana",
+    "compressible": true
   },
   "application/vnd.d2l.coursepackage1p0+zip": {
     "source": "iana",
@@ -3813,6 +3822,9 @@ export const db: {
   "application/vnd.nearst.inv+json": {
     "source": "iana",
     "compressible": true
+  },
+  "application/vnd.nebumind.line": {
+    "source": "iana"
   },
   "application/vnd.nervana": {
     "source": "iana"
@@ -6099,8 +6111,7 @@ export const db: {
   },
   "application/xcap-error+xml": {
     "source": "iana",
-    "compressible": true,
-    "extensions": ["xer"]
+    "compressible": true
   },
   "application/xcap-ns+xml": {
     "source": "iana",
@@ -6241,7 +6252,8 @@ export const db: {
     "extensions": ["adp"]
   },
   "audio/amr": {
-    "source": "iana"
+    "source": "iana",
+    "extensions": ["amr"]
   },
   "audio/amr-wb": {
     "source": "iana"
@@ -6537,6 +6549,9 @@ export const db: {
   "audio/s3m": {
     "source": "apache",
     "extensions": ["s3m"]
+  },
+  "audio/scip": {
+    "source": "iana"
   },
   "audio/silk": {
     "source": "apache",
@@ -6881,6 +6896,7 @@ export const db: {
     "source": "iana"
   },
   "image/avif": {
+    "source": "iana",
     "compressible": false,
     "extensions": ["avif"]
   },
@@ -7422,6 +7438,10 @@ export const db: {
   },
   "model/vnd.rosette.annotated-data-model": {
     "source": "iana"
+  },
+  "model/vnd.sap.vds": {
+    "source": "iana",
+    "extensions": ["vds"]
   },
   "model/vnd.usdz+zip": {
     "source": "iana",
@@ -7985,6 +8005,9 @@ export const db: {
     "source": "iana",
     "extensions": ["3g2"]
   },
+  "video/av1": {
+    "source": "iana"
+  },
   "video/bmpeg": {
     "source": "iana"
   },
@@ -7998,6 +8021,9 @@ export const db: {
     "source": "iana"
   },
   "video/encaprtp": {
+    "source": "iana"
+  },
+  "video/ffv1": {
     "source": "iana"
   },
   "video/flexfec": {
@@ -8031,7 +8057,8 @@ export const db: {
     "source": "iana"
   },
   "video/iso.segment": {
-    "source": "iana"
+    "source": "iana",
+    "extensions": ["m4s"]
   },
   "video/jpeg": {
     "source": "iana",
@@ -8109,6 +8136,9 @@ export const db: {
     "source": "iana"
   },
   "video/rtx": {
+    "source": "iana"
+  },
+  "video/scip": {
     "source": "iana"
   },
   "video/smpte291": {
