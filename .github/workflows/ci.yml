@@ -9,9 +9,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: download deno
-        uses: denolib/setup-deno@v2
+        uses: denoland/setup-deno@main
         with:
-          deno-version: v1.7.0
+          deno-version: v1.8.3
       - name: check formatting
         run: deno fmt --check
       - name: check linting
