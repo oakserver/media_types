@@ -11,10 +11,10 @@ jobs:
       - name: download deno
         uses: denoland/setup-deno@main
         with:
-          deno-version: "1.9.2"
+          deno-version: "1.10.0"
       - name: check formatting
         run: deno fmt --check
       - name: check linting
-        run: deno lint --unstable
+        run: deno lint
       - name: run tests
         run: deno test
