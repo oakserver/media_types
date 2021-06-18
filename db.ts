@@ -47,6 +47,14 @@ export const db: {
     "source": "iana",
     "compressible": true
   },
+  "application/3gpphal+json": {
+    "source": "iana",
+    "compressible": true
+  },
+  "application/3gpphalforms+json": {
+    "source": "iana",
+    "compressible": true
+  },
   "application/a2l": {
     "source": "iana"
   },
@@ -1035,6 +1043,9 @@ export const db: {
   "application/nss": {
     "source": "iana"
   },
+  "application/oauth-authz-req+jwt": {
+    "source": "iana"
+  },
   "application/ocsp-request": {
     "source": "iana"
   },
@@ -1375,6 +1386,10 @@ export const db: {
     "compressible": true
   },
   "application/sarif+json": {
+    "source": "iana",
+    "compressible": true
+  },
+  "application/sarif-external-properties+json": {
     "source": "iana",
     "compressible": true
   },
@@ -1732,6 +1747,9 @@ export const db: {
   "application/vnd.3gpp-v2x-local-service-information": {
     "source": "iana"
   },
+  "application/vnd.3gpp.5gnas": {
+    "source": "iana"
+  },
   "application/vnd.3gpp.access-transfer-events+xml": {
     "source": "iana",
     "compressible": true
@@ -1744,7 +1762,13 @@ export const db: {
     "source": "iana",
     "compressible": true
   },
+  "application/vnd.3gpp.gtpc": {
+    "source": "iana"
+  },
   "application/vnd.3gpp.interworking-data": {
+    "source": "iana"
+  },
+  "application/vnd.3gpp.lpp": {
     "source": "iana"
   },
   "application/vnd.3gpp.mc-signalling-ear": {
@@ -1856,6 +1880,12 @@ export const db: {
     "source": "iana",
     "compressible": true
   },
+  "application/vnd.3gpp.ngap": {
+    "source": "iana"
+  },
+  "application/vnd.3gpp.pfcp": {
+    "source": "iana"
+  },
   "application/vnd.3gpp.pic-bw-large": {
     "source": "iana",
     "extensions": ["plb"]
@@ -1867,6 +1897,9 @@ export const db: {
   "application/vnd.3gpp.pic-bw-var": {
     "source": "iana",
     "extensions": ["pvb"]
+  },
+  "application/vnd.3gpp.s1ap": {
+    "source": "iana"
   },
   "application/vnd.3gpp.sms": {
     "source": "iana"
@@ -2356,6 +2389,9 @@ export const db: {
     "source": "iana"
   },
   "application/vnd.cryptomator.encrypted": {
+    "source": "iana"
+  },
+  "application/vnd.cryptomator.vault": {
     "source": "iana"
   },
   "application/vnd.ctc-posml": {
@@ -2852,6 +2888,19 @@ export const db: {
   "application/vnd.fsc.weblaunch": {
     "source": "iana",
     "extensions": ["fsc"]
+  },
+  "application/vnd.fujifilm.fb.docuworks": {
+    "source": "iana"
+  },
+  "application/vnd.fujifilm.fb.docuworks.binder": {
+    "source": "iana"
+  },
+  "application/vnd.fujifilm.fb.docuworks.container": {
+    "source": "iana"
+  },
+  "application/vnd.fujifilm.fb.jfi+xml": {
+    "source": "iana",
+    "compressible": true
   },
   "application/vnd.fujitsu.oasys": {
     "source": "iana",
@@ -3463,7 +3512,8 @@ export const db: {
     "extensions": ["portpkg"]
   },
   "application/vnd.mapbox-vector-tile": {
-    "source": "iana"
+    "source": "iana",
+    "extensions": ["mvt"]
   },
   "application/vnd.marlin.drm.actiontoken+xml": {
     "source": "iana",
@@ -5474,6 +5524,7 @@ export const db: {
     "source": "iana"
   },
   "application/wasm": {
+    "source": "iana",
     "compressible": true,
     "extensions": ["wasm"]
   },
@@ -7436,6 +7487,9 @@ export const db: {
     "source": "iana",
     "extensions": ["x_t"]
   },
+  "model/vnd.pytha.pyox": {
+    "source": "iana"
+  },
   "model/vnd.rosette.annotated-data-model": {
     "source": "iana"
   },
@@ -7718,6 +7772,7 @@ export const db: {
     "source": "iana"
   },
   "text/shex": {
+    "source": "iana",
     "extensions": ["shex"]
   },
   "text/slim": {
@@ -7989,6 +8044,7 @@ export const db: {
     "source": "iana"
   },
   "text/yaml": {
+    "compressible": true,
     "extensions": ["yaml","yml"]
   },
   "video/1d-interleaved-parityfec": {
