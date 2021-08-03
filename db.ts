@@ -813,6 +813,7 @@ export const db: {
     "extensions": ["mads"]
   },
   "application/manifest+json": {
+    "source": "iana",
     "charset": "UTF-8",
     "compressible": true,
     "extensions": ["webmanifest"]
@@ -930,6 +931,9 @@ export const db: {
     "source": "iana"
   },
   "application/mipc": {
+    "source": "iana"
+  },
+  "application/missing-blocks+cbor-seq": {
     "source": "iana"
   },
   "application/mmt-aei+xml": {
@@ -1097,6 +1101,10 @@ export const db: {
   "application/oxps": {
     "source": "iana",
     "extensions": ["oxps"]
+  },
+  "application/p21+zip": {
+    "source": "iana",
+    "compressible": false
   },
   "application/p2p-overlay+xml": {
     "source": "iana",
@@ -1676,7 +1684,8 @@ export const db: {
     "source": "iana"
   },
   "application/trig": {
-    "source": "iana"
+    "source": "iana",
+    "extensions": ["trig"]
   },
   "application/ttml+xml": {
     "source": "iana",
@@ -2088,6 +2097,12 @@ export const db: {
   "application/vnd.antix.game-component": {
     "source": "iana",
     "extensions": ["atx"]
+  },
+  "application/vnd.apache.arrow.file": {
+    "source": "iana"
+  },
+  "application/vnd.apache.arrow.stream": {
+    "source": "iana"
   },
   "application/vnd.apache.thrift.binary": {
     "source": "iana"
@@ -4324,6 +4339,9 @@ export const db: {
     "compressible": true,
     "extensions": ["osm"]
   },
+  "application/vnd.opentimestamps.ots": {
+    "source": "iana"
+  },
   "application/vnd.openxmlformats-officedocument.custom-properties+xml": {
     "source": "iana",
     "compressible": true
@@ -4855,6 +4873,9 @@ export const db: {
   "application/vnd.renlearn.rlprint": {
     "source": "iana"
   },
+  "application/vnd.resilient.logic": {
+    "source": "iana"
+  },
   "application/vnd.restful+json": {
     "source": "iana",
     "compressible": true
@@ -5318,6 +5339,10 @@ export const db: {
   },
   "application/vnd.verimatrix.vcas": {
     "source": "iana"
+  },
+  "application/vnd.veritone.aion+json": {
+    "source": "iana",
+    "compressible": true
   },
   "application/vnd.veryant.thin": {
     "source": "iana"
@@ -7437,6 +7462,16 @@ export const db: {
     "source": "iana",
     "extensions": ["obj"]
   },
+  "model/step+zip": {
+    "source": "iana",
+    "compressible": false,
+    "extensions": ["stpz"]
+  },
+  "model/step-xml+zip": {
+    "source": "iana",
+    "compressible": false,
+    "extensions": ["stpxz"]
+  },
   "model/stl": {
     "source": "iana",
     "extensions": ["stl"]
@@ -8332,6 +8367,9 @@ export const db: {
     "source": "iana"
   },
   "video/vp8": {
+    "source": "iana"
+  },
+  "video/vp9": {
     "source": "iana"
   },
   "video/webm": {
