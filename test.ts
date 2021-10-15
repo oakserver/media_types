@@ -1,6 +1,6 @@
 // Copyright 2020 the oak authors. All rights reserved. MIT license.
 
-import { assertEquals } from "https://deno.land/std@0.107.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@0.111.0/testing/asserts.ts";
 import {
   charset,
   contentType,
