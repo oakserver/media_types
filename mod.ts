@@ -28,8 +28,8 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
+import { extname } from "https://deno.land/std@0.114.0/path/mod.ts";
 import { db } from "./db.ts";
-import { extname } from "./deps.ts";
 
 const EXTRACT_TYPE_REGEXP = /^\s*([^;\s]*)(?:;|\s|$)/;
 const TEXT_TYPE_REGEXP = /^text\//i;

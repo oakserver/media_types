@@ -5,7 +5,7 @@
  *
  * Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
  * Copyright (c) 2020 the Deno authors
- * Copyright (c) 2020 the oak authors
+ * Copyright (c) 2021 the oak authors
  *
  * Permission is hereby granted, free of charge, to any person obtaining
  * a copy of this software and associated documentation files (the
@@ -27,14 +27,14 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-export const db: {
-  [mediaType: string]: {
-    source?: string;
-    compressible?: boolean;
-    charset?: string;
-    extensions?: string[];
-  };
-} = JSON.parse(`{
+interface DBEntry {
+  source: string;
+  compressible?: boolean;
+  charset?: string;
+  extensions?: string[];
+}
+
+export const db: Record<string, DBEntry> = JSON.parse(`{
   "application/1d-interleaved-parityfec": {
     "source": "iana"
   },
@@ -56,6 +56,9 @@ export const db: {
     "compressible": true
   },
   "application/a2l": {
+    "source": "iana"
+  },
+  "application/ace+cbor": {
     "source": "iana"
   },
   "application/activemessage": {
@@ -126,6 +129,9 @@ export const db: {
   "application/applixware": {
     "source": "apache",
     "extensions": ["aw"]
+  },
+  "application/at+jwt": {
+    "source": "iana"
   },
   "application/atf": {
     "source": "iana"
@@ -526,6 +532,10 @@ export const db: {
   "application/expect-ct-report+json": {
     "source": "iana",
     "compressible": true
+  },
+  "application/express": {
+    "source": "iana",
+    "extensions": ["exp"]
   },
   "application/fastinfoset": {
     "source": "iana"
@@ -1102,6 +1112,9 @@ export const db: {
     "source": "iana",
     "extensions": ["oxps"]
   },
+  "application/p21": {
+    "source": "iana"
+  },
   "application/p21+zip": {
     "source": "iana",
     "compressible": false
@@ -1559,6 +1572,10 @@ export const db: {
     "compressible": true,
     "extensions": ["srx"]
   },
+  "application/spdx+json": {
+    "source": "iana",
+    "compressible": true
+  },
   "application/spirits-event+xml": {
     "source": "iana",
     "compressible": true
@@ -1674,6 +1691,9 @@ export const db: {
     "compressible": true
   },
   "application/tnauthlist": {
+    "source": "iana"
+  },
+  "application/token-introspection+jwt": {
     "source": "iana"
   },
   "application/toml": {
@@ -2036,6 +2056,10 @@ export const db: {
   },
   "application/vnd.afpc.modca-pagesegment": {
     "source": "iana"
+  },
+  "application/vnd.age": {
+    "source": "iana",
+    "extensions": ["age"]
   },
   "application/vnd.ah-barcode": {
     "source": "iana"
@@ -3877,6 +3901,10 @@ export const db: {
   "application/vnd.mynfc": {
     "source": "iana",
     "extensions": ["taglet"]
+  },
+  "application/vnd.nacamar.ybrid+json": {
+    "source": "iana",
+    "compressible": true
   },
   "application/vnd.ncd.control": {
     "source": "iana"
@@ -5831,6 +5859,15 @@ export const db: {
     "source": "apache",
     "extensions": ["iso"]
   },
+  "application/x-iwork-keynote-sffkey": {
+    "extensions": ["key"]
+  },
+  "application/x-iwork-numbers-sffnumbers": {
+    "extensions": ["numbers"]
+  },
+  "application/x-iwork-pages-sffpages": {
+    "extensions": ["pages"]
+  },
   "application/x-java-archive-diff": {
     "source": "nginx",
     "extensions": ["jardiff"]
@@ -7203,6 +7240,7 @@ export const db: {
   },
   "image/vnd.microsoft.icon": {
     "source": "iana",
+    "compressible": true,
     "extensions": ["ico"]
   },
   "image/vnd.mix": {
@@ -7212,6 +7250,7 @@ export const db: {
     "source": "iana"
   },
   "image/vnd.ms-dds": {
+    "compressible": true,
     "extensions": ["dds"]
   },
   "image/vnd.ms-modi": {
@@ -7461,6 +7500,14 @@ export const db: {
   "model/obj": {
     "source": "iana",
     "extensions": ["obj"]
+  },
+  "model/step": {
+    "source": "iana"
+  },
+  "model/step+xml": {
+    "source": "iana",
+    "compressible": true,
+    "extensions": ["stpx"]
   },
   "model/step+zip": {
     "source": "iana",
@@ -7893,6 +7940,10 @@ export const db: {
     "source": "iana",
     "charset": "UTF-8"
   },
+  "text/vnd.familysearch.gedcom": {
+    "source": "iana",
+    "extensions": ["ged"]
+  },
   "text/vnd.ficlab.flt": {
     "source": "iana"
   },
@@ -8161,6 +8212,9 @@ export const db: {
   "video/jpm": {
     "source": "apache",
     "extensions": ["jpm","jpgm"]
+  },
+  "video/jxsv": {
+    "source": "iana"
   },
   "video/mj2": {
     "source": "iana",

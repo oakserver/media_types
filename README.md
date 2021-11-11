@@ -3,9 +3,9 @@
 [![ci][ci badge]][ci link]
 [![deno doc](https://doc.deno.land/badge.svg)](https://doc.deno.land/https/deno.land/x/media_types/mod.ts)
 
-A module that assists in resolving media types and extensions. It consumes the
-[mime-db](https://github.com/jshttp/mime-db) and provides API access to the
-information.
+A module that assists in resolving media types and extensions. It consumes a
+media type database derived from [mime-db](https://github.com/jshttp/mime-db)
+and provides API access to the information.
 
 ## Usage
 
@@ -87,7 +87,7 @@ types.get("js"); // "application/javascript"
 
 ---
 
-Adapted from [mime-type](https://github.com/jshttp/mime-types) and
+Adapted from [mime-types](https://github.com/jshttp/mime-types) and
 [mime-db](https://github.com/jshttp/mime-db).
 
 MIT License.
