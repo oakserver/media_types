@@ -1,4 +1,4 @@
-// Copyright 2020-2021 the oak authors. All rights reserved. MIT license.
+// Copyright 2020-2022 the oak authors. All rights reserved. MIT license.
 
 import { assertEquals } from "https://deno.land/std@0.114.0/testing/asserts.ts";
 import {
