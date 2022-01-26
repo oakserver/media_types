@@ -28,7 +28,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { extname } from "https://deno.land/std@0.118.0/path/mod.ts";
+import { extname } from "https://deno.land/std@0.122.0/path/mod.ts";
 import { db } from "./db.ts";
 
 const EXTRACT_TYPE_REGEXP = /^\s*([^;\s]*)(?:;|\s|$)/;
