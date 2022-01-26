@@ -364,6 +364,11 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
     "compressible": true,
     "extensions": ["mpd"]
   },
+  "application/dash-patch+xml": {
+    "source": "iana",
+    "compressible": true,
+    "extensions": ["mpp"]
+  },
   "application/dashdelta": {
     "source": "iana"
   },
@@ -2840,6 +2845,10 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
   "application/vnd.etsi.tsl.der": {
     "source": "iana"
   },
+  "application/vnd.eu.kasparian.car+json": {
+    "source": "iana",
+    "compressible": true
+  },
   "application/vnd.eudora.data": {
     "source": "iana"
   },
@@ -2869,6 +2878,10 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
   },
   "application/vnd.f-secure.mobile": {
     "source": "iana"
+  },
+  "application/vnd.familysearch.gedcom+zip": {
+    "source": "iana",
+    "compressible": false
   },
   "application/vnd.fastcopy-disk-image": {
     "source": "iana"
@@ -3159,6 +3172,16 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
   "application/vnd.hhe.lesson-player": {
     "source": "iana",
     "extensions": ["les"]
+  },
+  "application/vnd.hl7cda+xml": {
+    "source": "iana",
+    "charset": "UTF-8",
+    "compressible": true
+  },
+  "application/vnd.hl7v2+xml": {
+    "source": "iana",
+    "charset": "UTF-8",
+    "compressible": true
   },
   "application/vnd.hp-hpgl": {
     "source": "iana",
@@ -5190,6 +5213,10 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
     "source": "iana"
   },
   "application/vnd.sycle+xml": {
+    "source": "iana",
+    "compressible": true
+  },
+  "application/vnd.syft+json": {
     "source": "iana",
     "compressible": true
   },
