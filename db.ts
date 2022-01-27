@@ -6886,7 +6886,8 @@ export const db: Record<string, DBEntry> = JSON.parse(`{
     "source": "iana"
   },
   "audio/vnd.wave": {
-    "compressible": false
+    "compressible": false,
+    "extensions": ["wav"]
   },
   "audio/vorbis": {
     "source": "iana",
