@@ -29,7 +29,18 @@
  */
 
 import { extname } from "https://deno.land/std@0.128.0/path/mod.ts";
-import { db } from "./db.ts";
+import db from "https://raw.githubusercontent.com/jshttp/mime-db/v1.52.0/db.json" assert {
+  type: "json",
+};
+
+interface DBEntry {
+  source: string;
+  compressible?: boolean;
+  charset?: string;
+  extensions?: string[];
+}
+
+type KeyOfDb = keyof typeof db;
 
 const EXTRACT_TYPE_REGEXP = /^\s*([^;\s]*)(?:;|\s|$)/;
 const TEXT_TYPE_REGEXP = /^text\//i;
@@ -38,17 +49,17 @@ const TEXT_TYPE_REGEXP = /^text\//i;
 export const extensions = new Map<string, string[]>();
 
 /** A map of the media type for a given extension */
-export const types = new Map<string, string>();
+export const types = new Map<string, KeyOfDb>();
 
 /** Internal function to populate the maps based on the Mime DB */
 function populateMaps(
   extensions: Map<string, string[]>,
-  types: Map<string, string>,
+  types: Map<string, KeyOfDb>,
 ): void {
   const preference = ["nginx", "apache", undefined, "iana"];
 
   for (const type of Object.keys(db)) {
-    const mime = db[type];
+    const mime = db[type as KeyOfDb] as DBEntry;
     const exts = mime.extensions;
 
     if (!exts || !exts.length) {
@@ -60,7 +71,7 @@ function populateMaps(
     for (const ext of exts) {
       const current = types.get(ext);
       if (current) {
-        const from = preference.indexOf(db[current].source);
+        const from = preference.indexOf((db[current] as DBEntry).source);
         const to = preference.indexOf(mime.source);
 
         if (
@@ -72,7 +83,7 @@ function populateMaps(
         }
       }
 
-      types.set(ext, type);
+      types.set(ext, type as KeyOfDb);
     }
   }
 }
@@ -89,7 +100,7 @@ export function charset(type: string): string | undefined {
     return undefined;
   }
   const [match] = m;
-  const mime = db[match.toLowerCase()];
+  const mime = db[match.toLowerCase() as KeyOfDb] as DBEntry;
 
   if (mime && mime.charset) {
     return mime.charset;
