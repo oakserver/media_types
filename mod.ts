@@ -28,7 +28,7 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { extname } from "https://deno.land/std@0.131.0/path/mod.ts";
+import { extname } from "https://deno.land/std@0.140.0/path/mod.ts";
 import db from "https://raw.githubusercontent.com/jshttp/mime-db/v1.52.0/db.json" assert {
   type: "json",
 };
